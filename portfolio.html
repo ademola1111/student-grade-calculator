@@ -1,7 +1,12 @@
+
+<!-- trying comments in html-->
 <!DOCTYPE html>
 <html>
     <head>
         <title>portfolio assignment</title>
+        <link
+        rel="stylesheet"
+        href="style.css">
     </head>
 <body>
 
@@ -11,19 +16,27 @@
     <p>I am a Computer Science Student</p>
 </header>
 <main>
+    <section class="about">
     <h2>About me</h2>
     <p>I'm currently learning full-stack development.
 I enjoy coding, reading web novels, and spending time with friends.
 My goal is to become a software engineer.</p>
+    </section>
+    
+    <section class="education">
     <h2>Education</h2>
-    <p>I studied computer science at babcock university</p>
+    <p>I studied computer science at babcock university</p></section>
+    
+    <section class="goals">
     <h2>Goals</h2>
     <ol>
         <li>Become a full-stack developer</li>
         <li>Get an internship</li>
         <li>Learn AI</li>
     </ol>
+    </section>
     
+    <section class="skills">
     <h2>Skills i want to learn</h2>
     
     <ul>
@@ -33,15 +46,20 @@ My goal is to become a software engineer.</p>
 <li>SQL</li>
 <li>Docker</li>
     </ul>
-    <a href="https://github.com/ademola1111" target="_blank" >my github portfolio</a>
+    
+</section>
+
+  
+
+<section class="contact">
+     <h2>Contact Me</h2>
+     <a href="https://github.com/ademola1111" target="_blank" >my github portfolio</a>
     <br>
     <a href="https://linkedin.com" target="_blank" >linkedln</a>
     <br>
-    <img src="images/or scr 1.png" alt="an image" width="300px">
-
-    <section>
+        
+      <img src="images/avatar.jpg" alt="an image" width="300px">
         <form>
-        <h2>Contact Me</h2>
         <label for="name">Full name</label>
         <input
         id="name"
@@ -57,14 +75,14 @@ My goal is to become a software engineer.</p>
         <label for="Age">Age</label>
         <input
         id="Age"
-        type="text"
+        type="number"
         placeholder="enter your age" >
         <br><br>
         <label for="Date of birth">Date of birth</label>
         <input
         id="Date of birth"
         type="date"
-        placeholder="enter your date of birth" >
+        >
         <br><br>
         <label for="Gender">Select your Gender</label>
         <br><br>
@@ -85,16 +103,16 @@ My goal is to become a software engineer.</p>
 <label for="skills">Select your skills</label>
 <br><br>
   <input type="checkbox" id="html" name="skills" value="html">
-  <label for="reading">html</label><br>
+  <label for="html">html</label><br>
 
   <input type="checkbox" id="css" name="skills" value="css">
-  <label for="gaming">css</label><br>
+  <label for="css">css</label><br>
 
   <input type="checkbox" id="javascript" name="skills" value="javascript" >
-  <label for="sports">javascript</label><br>
+  <label for="javascript">javascript</label><br>
 <br>
 <label for="country">Select your country:</label>
-<select>
+<select id="country" name="country">
 
 <option>Nigeria</option>
 
@@ -115,11 +133,13 @@ My goal is to become a software engineer.</p>
 id="about"
 rows="5"
 cols="40"></textarea>
-
-<button>Submit</button>
+<br><br>
+<button class="submit-btn" type="submit">
+Submit
+</button>
 
 </form>
-    </section>
+</section>
   
 </main>
 <footer>
