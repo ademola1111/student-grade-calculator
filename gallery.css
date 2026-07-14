@@ -1,0 +1,27 @@
+
+ .courses{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+padding:20px;
+
+}
+
+.topic{
+
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 3px 8px gray;
+    padding:30px;
+    text-align: center;
+
+} 
+
+button:hover{
+background-color:white;
+color:white;
+}
